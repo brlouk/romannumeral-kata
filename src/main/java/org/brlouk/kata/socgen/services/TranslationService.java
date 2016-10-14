@@ -6,8 +6,6 @@ import java.util.Optional;
 import javax.annotation.Resource;
 
 import org.brlouk.kata.socgen.model.TranslationTable;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 /**
@@ -17,8 +15,6 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class TranslationService {
-
-	private final Logger logger = LoggerFactory.getLogger(TranslationService.class);
 
 	/**
 	 * Table of Translation
