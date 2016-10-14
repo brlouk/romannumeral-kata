@@ -1,6 +1,6 @@
 # romannumeral-kata
 
-This is my solution for the folowing roman numeral kata built with spring boot and Java 8.
+This is my solution for the given roman numeral kata built with spring boot and Java 8.
 
 https://github.com/xebia-france/romannumeral-kata/blob/master/README.md
 
