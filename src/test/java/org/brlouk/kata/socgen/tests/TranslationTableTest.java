@@ -22,6 +22,9 @@ public class TranslationTableTest {
 	@Test
 	public void findFirst(){
 		Assert.assertEquals(Optional.of(new SimpleEntry<Integer,String>(5,"V")), table.findFirstSymbol(7));
+		Assert.assertEquals(Optional.empty(), table.findFirstSymbol(0));
+		Assert.assertEquals(Optional.of(new SimpleEntry<Integer,String>(1,"I")), table.findFirstSymbol(1));
+		
 	}
 
 }
