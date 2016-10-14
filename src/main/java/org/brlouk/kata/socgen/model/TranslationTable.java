@@ -48,7 +48,7 @@ public class TranslationTable {
 	 * Return the nearest entry number in table based on the given number
 	 * 
 	 * @param number
-	 * @return
+	 * @return the nearest entry
 	 */
 	public Optional<Entry<Integer, String>> findFirstSymbol(int number) {
 		return numberToRomanNumeral.entrySet()

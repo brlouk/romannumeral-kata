@@ -28,7 +28,7 @@ public class TranslationService {
 	 * 
 	 * @param number
 	 *            : number to convert
-	 * @return
+	 * @return roman numeral
 	 */
 	public String convertToRomanNumeral(int number) {
 		StringBuilder numeralBuilder = new StringBuilder();
