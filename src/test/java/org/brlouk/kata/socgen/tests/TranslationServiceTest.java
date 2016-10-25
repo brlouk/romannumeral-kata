@@ -38,11 +38,13 @@ public class TranslationServiceTest {
 		Assert.assertEquals("MMM", service.convertToRomanNumeral(3000));
 		Assert.assertEquals("MMVIII", service.convertToRomanNumeral(2008));
 	}
-	
 
-	@Test(expected = UnsupportedOperationException.class)
+	@Test
 	public void convertToDigit() {
-		service.convertToDigit("V");
+		Assert.assertEquals(0, service.convertToDigit(""));
+		Assert.assertEquals(5, service.convertToDigit("V"));
+		Assert.assertEquals(4, service.convertToDigit("IV"));
+		Assert.assertEquals(9, service.convertToDigit("IX"));
 	}
 
 }

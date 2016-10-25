@@ -1,7 +1,9 @@
 package org.brlouk.kata.socgen.services;
 
+import java.util.List;
 import java.util.Map.Entry;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import javax.annotation.Resource;
 
@@ -65,8 +67,21 @@ public class TranslationService {
 	 *            : numeral to convert
 	 * @return number
 	 */
-	public String convertToDigit(String romanNumeral) {
-		throw new UnsupportedOperationException("not implemented yet! (not in the scope)");
+	public int convertToDigit(String romanNumeral) {
+		int sum = 0;
+		List<String> numeralList = romanNumeral.chars()
+				// Convert to String
+				.mapToObj(c -> String.valueOf((char) c))
+				// Collect to LIST
+				.collect(Collectors.toList());
+
+		for (int i = 0; i < numeralList.size(); i++) {
+			String numeral = numeralList.get(i);
+			String nextNumeral = i + 1 < numeralList.size() ? numeralList.get(i + 1) : "";
+			sum += translation.isPlus(numeral, nextNumeral) * translation.findDigit(numeral);
+		}
+
+		return sum;
 	}
 
 }

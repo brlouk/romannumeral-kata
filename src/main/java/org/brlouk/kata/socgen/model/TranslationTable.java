@@ -58,4 +58,20 @@ public class TranslationTable {
 				.filter(e -> number - e.getKey() >= 0).findFirst();
 	}
 
+	public int findDigit(String numeral) {
+		return numberToRomanNumeral.entrySet().stream().filter(e -> e.getValue().equals(numeral)).findFirst().get()
+				.getKey();
+	}
+
+	public int isPlus(String numeral, String nextNumeral) {
+		switch (numeral) {
+		case "I":
+			if (nextNumeral.equals("V") || nextNumeral.equals("X")) {
+				return -1;
+			}
+			break;
+		}
+		return 1;
+	}
+
 }
