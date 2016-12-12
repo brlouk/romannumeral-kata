@@ -1,4 +1,4 @@
-package org.brlouk.kata.socgen.model;
+package org.brlouk.kata.model;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;

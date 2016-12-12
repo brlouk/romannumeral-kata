@@ -1,4 +1,4 @@
-package org.brlouk.kata.socgen.services;
+package org.brlouk.kata.services;
 
 import java.util.List;
 import java.util.Map.Entry;
@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 import javax.annotation.Resource;
 
-import org.brlouk.kata.socgen.model.TranslationTable;
+import org.brlouk.kata.model.TranslationTable;
 import org.springframework.stereotype.Service;
 
 /**

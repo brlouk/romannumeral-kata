@@ -1,8 +1,8 @@
-package org.brlouk.kata.socgen.tests;
+package org.brlouk.kata.tests;
 
 import javax.annotation.Resource;
 
-import org.brlouk.kata.socgen.services.TranslationService;
+import org.brlouk.kata.services.TranslationService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

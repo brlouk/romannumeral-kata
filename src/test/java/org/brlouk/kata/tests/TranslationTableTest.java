@@ -1,11 +1,11 @@
-package org.brlouk.kata.socgen.tests;
+package org.brlouk.kata.tests;
 
 import java.util.AbstractMap.SimpleEntry;
 import java.util.Optional;
 
 import javax.annotation.Resource;
 
-import org.brlouk.kata.socgen.model.TranslationTable;
+import org.brlouk.kata.model.TranslationTable;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
